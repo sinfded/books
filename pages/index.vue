@@ -48,14 +48,15 @@ const changePage = (page: number) => {
     <Card
       class="h-[80px] min-h-[80px] w-full flex items-center justify-between px-10"
     >
-      <div class="w-[200px] text-3xl font-bold">
+      <div class="text-3xl font-bold">
         <span class="text-primary">Books.com</span>
       </div>
-      <div class="w-[800px] flex">
+      <div class="w-[800px] flex justify-center">
         <Input
           v-model:model-value="text"
           class="max-w-[600px] rounded-xl h-[42px]"
           placeholder="Browse books..."
+          @keyup.enter="search"
         />
         <Button
           @click="search"
@@ -65,7 +66,10 @@ const changePage = (page: number) => {
           <Icon name="Search" />
         </Button>
       </div>
-      <div class="w-[110px]"></div>
+      <div class="flex flex-col text-sm font-semibold text-gray-500">
+        <span>Mary Grace Enriquez</span>
+        <span>Milan Bausa</span>
+      </div>
     </Card>
 
     <div class="container w-full h-full p-6">
