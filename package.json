@@ -1,0 +1,52 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@editorjs/editorjs": "^2.29.0",
+    "@editorjs/embed": "^2.7.0",
+    "@editorjs/header": "^2.8.1",
+    "@editorjs/image": "^2.9.0",
+    "@editorjs/list": "^1.9.0",
+    "@editorjs/paragraph": "^2.11.3",
+    "@nuxt/fonts": "^0.10.1",
+    "@pinia/nuxt": "^0.5.1",
+    "@popperjs/core": "^2.11.8",
+    "@radix-icons/vue": "^1.0.0",
+    "@tanstack/vue-table": "^8.12.0",
+    "@types/editorjs__header": "^2.6.3",
+    "@vee-validate/zod": "^4.12.5",
+    "@vueup/vue-quill": "^1.2.0",
+    "@vueuse/core": "^11.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.428.0",
+    "nuxt": "^3.10.1",
+    "pinia": "^2.1.7",
+    "radix-vue": "^1.8.5",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "^10.0.0",
+    "v-calendar": "^3.1.2",
+    "vee-validate": "^4.12.5",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.5",
+    "vue-simple-calendar": "^7.1.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/uuid": "^10.0.0",
+    "@vueuse/nuxt": "^11.1.0",
+    "shadcn-nuxt": "^0.9.0",
+    "typescript": "^5.3.3"
+  }
+}
