@@ -32,6 +32,7 @@ const search = async () => {
       .split(" ")
       .join("+")}&page=${skip.value + 1}&limit=${limit.value}&sort=rating`
   );
+  console.log(res.docs);
   results.value = res.docs;
   resultsCount.value = res.numFound;
   loading.value = false;
@@ -49,7 +50,7 @@ const changePage = (page: number) => {
       class="h-[80px] min-h-[80px] w-full flex items-center justify-between px-10"
     >
       <div class="text-3xl font-bold">
-        <span class="text-primary">Books.com</span>
+        <span class="text-primary">XWebDev</span>
       </div>
       <div class="w-[800px] flex justify-center">
         <Input
@@ -67,8 +68,7 @@ const changePage = (page: number) => {
         </Button>
       </div>
       <div class="flex flex-col text-sm font-semibold text-gray-500">
-        <span>Mary Grace Enriquez</span>
-        <span>Milan Bausa</span>
+        <span>Mary Grace M. Enriquez</span>
       </div>
     </Card>
 
@@ -124,6 +124,22 @@ const changePage = (page: number) => {
               class="flex items-center space-x-4 text-3xl text-gray-700 font-semibold animate-pulse"
               >Searching . . .
             </span>
+            <div
+              v-else
+              class="flex flex-col text-gray-500 border-2 border-blue-400 p-4 rounded-xl"
+            >
+              <span class="font-bold">LIBRARY EDUCATION</span>
+              <span class="text-sm font-medium mt-1"
+                >This page is a compliance for the subject XWebDev in
+                <span class="font-semibold"
+                  >AEMILIANIUM COLLEGE INCORPORATED(ACI)</span
+                >
+                by:
+              </span>
+              <span class="text-center mt-3 font-semibold text-blue-400"
+                >Mary Grace M. Enriquez</span
+              >
+            </div>
           </div>
           <div class="px-4 py-2 flex justify-end">
             <Pagination
