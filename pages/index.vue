@@ -26,6 +26,7 @@ const loading = ref(false);
 
 const search = async () => {
   loading.value = true;
+  results.value = [];
   const res = await $fetch<Response>(
     `https://openlibrary.org/search.json?q=${text.value
       .toString()
